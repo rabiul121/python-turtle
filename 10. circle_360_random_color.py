@@ -2,7 +2,7 @@ import random
 from turtle import Turtle, Screen, colormode
 
 t = Turtle()
-t.shape("arrow")
+t.shape("turtle")
 t.speed("fastest")
 colormode(255)
 
@@ -15,10 +15,13 @@ def random_color():
     return rgb
 
 
-for shape in range(int(360 / 5)):
-    t.color(random_color())
-    t.circle(100)
-    t.setheading(t.heading() + 5)
+def draw_circle(angle):
+    for shape in range(int(360 / angle)):
+        t.color(random_color())
+        t.circle(100)
+        t.setheading(t.heading() + angle)
 
+
+draw_circle(2)
 s = Screen()
 s.exitonclick()
