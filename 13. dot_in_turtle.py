@@ -6,7 +6,7 @@ t.shape("turtle")
 t.speed("fastest")
 colormode(255)
 t.hideturtle()
-t.penup()
+
 
 
 def random_color():
@@ -16,14 +16,13 @@ def random_color():
     rgb = (r, g, b)
     return rgb
 
-
-def draw_dot(num):
+def draw_dot(num, size):
     for dot in range(num):
-        t.dot(random.randint(1, 70), random_color())
+        t.dot(size, random_color())
         t.goto(random.randint(-300, 300), random.randint(-300, 300))
 
 
-draw_dot(200)
+draw_dot(100, 20)
 
 s = Screen()
 s.exitonclick()
