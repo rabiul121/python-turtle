@@ -9,12 +9,8 @@ t.speed("fastest")
 colormode(255)
 
 s.setup(900, 600)
-t.forward(200)
-t.left(90)
-t.forward(200)
-t.left(135)
-t.forward(math.sqrt(200**2 + 200**2))
-
+name = s.textinput("What's your name?", "My name is: ")
+print(name)
 
 
 

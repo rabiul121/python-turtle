@@ -1,4 +1,3 @@
-import random
 import math
 from turtle import Turtle, Screen, colormode
 
@@ -13,9 +12,6 @@ t.forward(200)
 t.left(90)
 t.forward(200)
 t.left(135)
-t.forward(math.sqrt(200**2 + 200**2))
-
-
-
+t.forward(math.sqrt(200 ** 2 + 200 ** 2))
 
 s.exitonclick()
