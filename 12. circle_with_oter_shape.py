@@ -18,10 +18,17 @@ def random_color():
 def draw_circle(angle):
     for shape in range(int(360 / angle)):
         t.color(random_color())
-        t.circle(100)
+        t.forward(100)
+        t.left(90)
+        t.forward(100)
+        t.left(90)
+        t.forward(100)
+        t.left(90)
+        t.forward(100)
+        t.left(90)
         t.setheading(t.heading() + angle)
 
 
-draw_circle(2)
+draw_circle(5)
 s = Screen()
 s.exitonclick()
